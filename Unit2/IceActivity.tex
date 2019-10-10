@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{csquotes}
+\usepackage{url}
+
+\begin{document}
+
+\title{Calculating the Depth of Polar Ice using Radar}
+\author{Prof. Jordan C. Hanson}
+
+\maketitle
+
+\section{Introduction}
+
+In this activity, you will learn how researchers measure the depth of polar ice as it relates to studies of climate change.  The speed of light is normally a constant,
+
+\begin{equation}
+c = 3.0\times 10^{8}~~m/s
+\end{equation}
+
+That is, a wave of light (like a radio wave) travels 300 million meters per second in a vacuum.  However, in a material such as ice, the speed is
+
+\begin{equation}
+v = \frac{c}{n} \label{eq:n}
+\end{equation}
+
+In Eq. \ref{eq:n}, the variable $n$ is called the \textit{index of refraction.}  In general, it varies according to the frequency of the radio wave or wave of light.  At radio frequencies, the value is $n=1.78$.  Suppose a radio wave is shot downwards through ice, reflects off of the ocean below, and returns to the receiver.  If the ice thickness is $h$, then the total distance traveled by the radio wave will be $2h$.  In general, if $\Delta y$ is the total distance traveled, $v$ is the speed, and $\Delta t$ is the time, then
+
+\begin{equation}
+\Delta y = v \Delta t
+\end{equation}
+
+Speed is just the ratio of distance and time.  Let's assume that $\Delta y = 2h$, and $v = c/n$.  This implies that
+
+\begin{equation}
+2h = \frac{c}{n} \Delta t
+\end{equation}
+
+Suppose we measure $\Delta t$ and we assume $n = 1.78$.  The measured ice thickness would be given by
+
+\begin{equation}
+h = \frac{c\Delta t}{2n}
+\end{equation}
+
+\section{Examples}
+Derive the ice thicknesses below:
+\begin{enumerate}
+\item Suppose we observe $\Delta t = 4.0$ $\mu$s.  One $\mu$s is equal to $10^{-6}$ seconds.  What is $h$?
+\item Suppose we arrive at a place in the Antarctic where we observe $\Delta t = 6.1$ $\mu$s.  The next year, we observe $\Delta t = 6.02$ $\mu$s. By how much did the ice thickness decrease?
+\end{enumerate}
+
+\section{The Open Polar Server}
+
+On the classroom PCs, go to the following website: \url{https://ops.cresis.ku.edu}.  Click on the tab in the upper left labeled \textbf{Antarctic}.  This should take you to a map of Antarctica, containing flight lines of aircraft collecting radar data over the ice sheets.
+
+\begin{enumerate}
+\item Click on one flight line and pull up a radar ``echogram.''  The y-axis represents $\Delta t$, and the x-axis represents distance or location.  The coler scale of the diagram represents the power $P$ of the radar returned signal.
+\item On the right-hand y-axis of these diagrams we see the time delay in $\mu$s.  Identify the surface of the ice, and identify the bottom.  Estimate the times in $\mu$s.
+\item Calculate the depth of the ice sheet along the flight line in five different places.
+\end{enumerate}
+
+\end{document}
